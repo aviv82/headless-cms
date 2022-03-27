@@ -8,7 +8,12 @@ import "./qs.js";
 async function ex4() {
   const query = qs.stringify(
     {
-      _,
+      fields: ['price'],
+      filters: {
+        outOfStock: {
+          
+        }
+      }
     },
     {
       encodeValuesOnly: true,
